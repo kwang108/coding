@@ -4,15 +4,6 @@ import java.util.List;
  * Created by kkwang on 7/12/14.
  */
 public class AddNumbers {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
-
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if(l1 == null && l2 == null) return null;
         int value = l1.val + l2.val;
