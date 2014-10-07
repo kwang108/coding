@@ -10,7 +10,7 @@ import java.util.*;
  */
 public class DistinctSubsequences {
     private static int subsequence(String t, int index, int prev, Map<Character, List<Integer>> map) {
-        if(index == t.length()-1) return 1;
+        if(index == t.length()) return 1;
 
         char c = t.charAt(index);
         List<Integer> positions = map.get(c);
